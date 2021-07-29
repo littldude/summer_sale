@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #292727;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Gilroy-Black.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/GothamPro-Bold.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GothamPro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/GothamPro-Medium.woff");
+  font-display: swap;
+}
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 87px;
+}
+.title--intro {
+  display: block;
+  width: 567px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-family: "GothamPro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+.text--intro {
+  display: block;
+  width: 380px;
+  margin-bottom: 27px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 271px;
+  height: 80px;
+  border-radius: 35px 0px;
+  background-color: #54BE4A;
+  font-weight: bold;
+  font-family: "Gilroy";
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  background-color: #8236F5;
+  transition: 0.2s linear;
+}
+
+.header {
+  padding: 16px 0 33px 0;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: block;
+  width: 165px;
+  height: 34px;
+}
+.header__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header__call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 65px;
+}
+.header__call--img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.header__call--item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+.header__call--item__number {
+  display: block;
+  color: #292727;
+}
+.header__call--item span {
+  display: block;
+  color: #292727;
+}
+
+.intro {
+  padding: 0 0 60px 0;
+}
+.intro__inner {
+  padding: 60px 0 96px 100px;
+  background-color: #FFF7ED;
+  border-radius: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro__text {
+  display: flex;
+  flex-direction: column;
+}
