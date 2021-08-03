@@ -14,6 +14,11 @@ p {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
   margin: 0;
@@ -69,6 +74,11 @@ ul {
 .title--center {
   text-align: center;
   text-transform: uppercase;
+}
+.title--package {
+  display: block;
+  width: 976px;
+  margin: 0 auto;
 }
 
 .text {
@@ -338,6 +348,9 @@ ul {
   line-height: 25px;
 }
 
+.package {
+  padding: 90px 0 0 0;
+}
 .package__inner {
   padding: 100px 0 90px 0;
   display: grid;
@@ -349,12 +362,13 @@ ul {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  border-top: 1px #292727 solid;
 }
 .package__item--header {
+  padding: 33px 210px 31px 90px;
   position: relative;
   font-family: "Gilroy";
-  padding: 45px 10px 50px 85px;
-  border-bottom: 1px solid #FFE7B7;
+  border-bottom: 1px solid #292727;
 }
 .package__item--header__title {
   margin-bottom: 8px;
@@ -374,7 +388,7 @@ ul {
   color: rgba(55, 35, 35, 0.6);
 }
 .package__item--body {
-  padding: 30px 140px 30px 85px;
+  padding: 33px 150px 31px 90px;
 }
 .package__item--body__link {
   display: flex;
