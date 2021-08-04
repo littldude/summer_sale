@@ -51,6 +51,13 @@ ul {
   src: url("../fonts/GothamPro-Medium.woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "GothamPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamPro.woff");
+  font-display: swap;
+}
 .container {
   width: 100%;
   max-width: 1180px;
@@ -365,65 +372,57 @@ ul {
   border-top: 1px #292727 solid;
 }
 .package__item--header {
+  position: relative;
   padding: 33px 210px 31px 90px;
   position: relative;
   font-family: "Gilroy";
   border-bottom: 1px solid #292727;
 }
 .package__item--header__title {
+  font-family: "Gilroy";
   margin-bottom: 8px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 26px;
   line-height: 32px;
   color: #292727;
 }
+.package__item--header__left svg {
+  position: absolute;
+  width: 135px;
+  height: 128px;
+  top: -57px;
+  right: -15px;
+  fill: #626262;
+}
+.package__item--header__left svg:hover {
+  fill: #8236F5;
+}
 .package__item--header small {
-  font-style: normal;
-  font-weight: normal;
+  font-family: "GothamPro";
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-}
-.package__item--header small:not(.white) {
-  color: rgba(55, 35, 35, 0.6);
+  color: #292727;
 }
 .package__item--body {
-  padding: 33px 150px 31px 90px;
+  padding: 33px 263px 31px 90px;
 }
 .package__item--body__link {
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: "GothamPro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
   color: #292727;
   -webkit-text-decoration: underline dashed 1px #f5f5f570;
           text-decoration: underline dashed 1px #f5f5f570;
 }
-.package__item--body__link:not(.white) {
-  -webkit-text-decoration: underline dashed 1px #9b9b9b54;
-          text-decoration: underline dashed 1px #9b9b9b54;
-}
-.package__item--body__link:not(.new) {
-  display: flex;
-  align-items: flex-start;
-}
 .package__item--body__link:hover {
-  transition: 1s linear;
-  -webkit-text-decoration: underline #ffffff;
-          text-decoration: underline #ffffff;
-}
-.package__item--body__link:hover:not(.white) {
-  -webkit-text-decoration: underline #292727;
-          text-decoration: underline #292727;
-}
-.package__item--body__link::before {
-  display: block;
-  content: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M7.49968%200C3.3581%200%200%203.3581%200%207.49968C0%2011.6413%203.3581%2015%207.49968%2015C11.6413%2015%2015%2011.6413%2015%207.49968C15%203.3581%2011.6413%200%207.49968%200ZM9.06095%2011.6235C8.67492%2011.7759%208.36762%2011.8914%208.13714%2011.9714C7.9073%2012.0514%207.64%2012.0914%207.33587%2012.0914C6.86857%2012.0914%206.50476%2011.9771%206.24571%2011.7492C5.98667%2011.5213%205.85778%2011.2324%205.85778%2010.8813C5.85778%2010.7448%205.8673%2010.6051%205.88635%2010.4629C5.90603%2010.3206%205.93714%2010.1606%205.97968%209.98095L6.46286%208.27429C6.5054%208.11048%206.54222%207.95492%206.57143%207.81016C6.60064%207.66413%206.6146%207.53016%206.6146%207.40825C6.6146%207.19111%206.56952%207.03873%206.48%206.95302C6.38921%206.8673%206.21841%206.8254%205.96381%206.8254C5.83937%206.8254%205.71111%206.84381%205.57968%206.88254C5.44952%206.92254%205.33651%206.95873%205.24381%206.99429L5.37143%206.46857C5.68762%206.33968%205.99048%206.22921%206.27937%206.13778C6.56825%206.04508%206.84127%205.99937%207.09841%205.99937C7.56254%205.99937%207.92064%206.11238%208.1727%206.33587C8.42349%206.56%208.54984%206.85143%208.54984%207.20952C8.54984%207.28381%208.54095%207.4146%208.52381%207.60127C8.50667%207.78857%208.47429%207.95937%208.4273%208.11619L7.94667%209.81778C7.9073%209.95429%207.87238%2010.1105%207.84064%2010.2851C7.80952%2010.4597%207.79429%2010.593%207.79429%2010.6825C7.79429%2010.9086%207.84444%2011.0629%207.94603%2011.1448C8.04635%2011.2267%208.22222%2011.2679%208.47111%2011.2679C8.58857%2011.2679%208.72%2011.247%208.86857%2011.2063C9.01587%2011.1657%209.12254%2011.1295%209.18984%2011.0984L9.06095%2011.6235ZM8.97587%204.71683C8.75175%204.92508%208.4819%205.02921%208.16635%205.02921C7.85143%205.02921%207.57968%204.92508%207.35365%204.71683C7.12889%204.50857%207.01524%204.25524%207.01524%203.95937C7.01524%203.66413%207.12952%203.41016%207.35365%203.2C7.57968%202.98921%207.85143%202.88444%208.16635%202.88444C8.4819%202.88444%208.75238%202.98921%208.97587%203.2C9.2%203.41016%209.31238%203.66413%209.31238%203.95937C9.31238%204.25587%209.2%204.50857%208.97587%204.71683Z%22%20fill%3D%22%23292727%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-  margin-right: 10px;
-  opacity: 0.7;
+  transition: 0.1s linear;
+  border-bottom: 3px #292727 solid;
 }
 .package__item--price {
   padding: 5px 0 60px 85px;
@@ -432,7 +431,6 @@ ul {
 .package__item--price__title {
   margin-bottom: 25px;
   font-family: "Gilroy";
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 32px;
@@ -456,17 +454,7 @@ ul {
   left: -9px;
   width: 150px;
   height: 2px;
-  background-color: #FF6464;
-}
-.package__item--price__old:not(.-dark)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: -9px;
-  width: 150px;
-  height: 2px;
-  background-color: #FFE7B7;
+  background-color: #292727;
 }
 .package__item--price__new {
   font-family: "Gilroy";
@@ -474,37 +462,38 @@ ul {
   font-weight: 900;
   font-size: 30px;
   line-height: 37px;
-  color: #FF6464;
+  color: #292727;
 }
 .package__item--footer {
-  border-top: 1px solid #FFE7B7;
-  padding: 40px 0 50px 85px;
+  border-top: 1px solid #292727;
+  padding: 74px 0 68px 0;
   overflow: hidden;
-}
-.package__item--footer__buy {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: #E5E5E5;
+  text-decoration: none;
 }
-.package__item--footer__buy:hover {
-  transform: scale(1.03);
-  transition: 0.2s linear;
+.package__item--footer__left {
+  border-radius: 0px 0px 0px 90px;
 }
-.package__img {
+.package__item--footer svg {
   display: block;
-  position: absolute;
+  width: 80px;
+  height: 20px;
+  margin-left: 30px;
+  fill: #292727;
 }
-.package__img--white {
-  left: 0;
-  top: -357px;
+.package__item--footer svg:hover {
+  fill: #8236F5;
 }
-.package__img--red {
-  right: -25px;
-  bottom: 240px;
-  z-index: 1;
-}
-.package__img--green {
-  top: -278px;
-  right: 77px;
+.package__buy {
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #292727;
 }
 
 .blocker {
@@ -541,16 +530,17 @@ ul {
   position: relative;
   z-index: 8;
   max-width: 600px;
+  border-radius: 60px;
   box-sizing: border-box;
   width: 90%;
   background: #fff;
-  padding: 61px 55px 50px 55px;
+  padding: 56px 56px 60px 56px;
   text-align: left;
 }
 .modal a.close-modal {
   position: absolute;
-  top: -50px;
-  right: -50px;
+  top: -40px;
+  right: -40px;
   display: block;
   width: 30px;
   height: 30px;
@@ -566,12 +556,12 @@ ul {
 }
 
 .modal__inf--title {
-  font-family: "ProximaNova";
-  margin-bottom: 39px;
+  font-family: "GothamPro";
+  margin-bottom: 22px;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 38px;
   color: #292727;
 }
 
@@ -585,10 +575,9 @@ ul {
 
 .modal__inf--text {
   display: block;
-  margin-bottom: 20px;
-  font-family: "ProximaNova";
-  font-style: normal;
-  font-weight: normal;
+  margin-bottom: 26px;
+  font-family: "GothamPro";
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #292727;
@@ -604,22 +593,25 @@ ul {
 }
 
 .modal__inf--price {
-  font-family: "ProximaNova";
+  font-family: "GothamPro";
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 26px;
   color: #292727;
+  text-transform: uppercase;
 }
 
 .button-more {
-  margin: 58px auto 0 auto;
-  background: #FFE7B7;
-  color: #292727;
+  margin-top: 46px;
+  color: #ffffff;
 }
 .button-more:hover {
-  background: #FFDA8F;
   transition: 0.2s linear;
+}
+
+.button-more--violet {
+  background-color: #8236F5;
 }
 
 .modal-spinner {
