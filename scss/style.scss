@@ -957,6 +957,16 @@ ul {
             }
         }
     }
+    .intro {
+        &__inner {
+            &::before {
+                right: -10%;
+            }
+            &::after {
+                left: -10%;
+            }
+        }
+    }
 }
 @media (max-width: 1366px) {
     .container {
@@ -1395,13 +1405,33 @@ ul {
         padding: 60px 0;
     }
     .open {
-        display: block;
-        background-color: $violet;
+        display: flex;
+        flex: 0 0 auto;
+        &--violet {
+            background-color: $violet;
+        }
+        &--orange {
+            background-color: $orange;
+        }
+        &--green {
+            background-color: $green;
+        }
     }
     .modal {
         width: 100%;
         max-width: 100%;
         padding: 10px 20px;
+        border-radius: 0;
+        &__inf {
+            // border-bottom: 1px $dark solid;
+            &--text {
+                margin-bottom: 0;
+                &__bold {
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
     }
     .package {
         &__link {
@@ -1409,9 +1439,17 @@ ul {
             align-items: center;
             justify-content: space-between;
             padding: 15px 20px;
-            border-bottom: 1px $dark solid;
+            border-top: 1px $dark solid;
+            &:nth-child(1) {
+                border-top: none;
+            }
         }
         &__item {
+            &--header {
+                small {
+                    display: none;
+                }
+            }
             &--body {
                 padding: 0;
                 &__link {
@@ -1661,9 +1699,25 @@ ul {
                         right: -5px;
                     }
                 }
+                &__center {
+                    svg {
+                        width: 114px;
+                        height: 114px;
+                        top: -43px;
+                        right: -16px;
+                    }
+                }
+                &__right {
+                    svg {
+                        width: 48px;
+                        height: 50px;
+                        top: -15px;
+                        right: -5px;
+                    }
+                }
                 &__title {
-                    font-size: 16px;
-                    line-height: 19px;
+                    font-size: 19px;
+                    line-height: 23px;
                 }
                 small {
                     font-size: 10px;
@@ -1707,7 +1761,7 @@ ul {
             }
         }
         &__link {
-            padding: 10px 10px 10px 20px;
+            padding: 10px 10px 10px 15px;
         }
         &__buy {
             font-size: 16px;
@@ -1807,6 +1861,6 @@ ul {
         }
     }
     .modal__inf {
-		padding: 30px 10px 40px 10px;
+		padding: 15px 10px 30px 10px;
     }
 }
