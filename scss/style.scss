@@ -574,7 +574,7 @@ ul {
 		&--body {
 			padding: 33px 160px 31px 90px;
 			&__link {
-                margin-bottom: 20px;
+                margin-bottom: 17px;
 				display: flex;
                 align-items: center;
 				font-family: 'GothamPro';
@@ -583,8 +583,9 @@ ul {
 				line-height: 22px;
 				color: $dark;
                 text-decoration: underline dashed 1px #f5f5f570;
+                border: 3px transparent solid;
 				&:hover {
-					transition: .1s linear;
+					transition: .2s linear;
                     border-bottom: 3px $dark solid;
                     font-weight: 700;
 				}
@@ -1430,6 +1431,12 @@ ul {
                     margin-bottom: 10px;
                     font-weight: 500;
                 }
+                &__italic {
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
             }
         }
     }
@@ -1440,8 +1447,11 @@ ul {
             justify-content: space-between;
             padding: 15px 20px;
             border-top: 1px $dark solid;
-            &:nth-child(1) {
+            &:first-of-type {
                 border-top: none;
+            }
+            &:last-of-type {
+                border-bottom: 1px $dark solid;
             }
         }
         &__item {
@@ -1454,6 +1464,7 @@ ul {
                 padding: 0;
                 &__link {
                     margin-bottom: 0;
+                    border-bottom: none;
                     &:hover {
                         font-weight: 500;
                         border-bottom: none;
@@ -1786,25 +1797,29 @@ ul {
         }
     }
     .modal {
-		max-width: 95%;
-	}
-	.modal__inf {
-		padding: 35px 10px 40px 20px;
-	}
-	.modal__inf--title {
-		font-size: 19px;
-		line-height: 22px;
-		font-size: 18px;
-		line-height: 21px;
-		margin-bottom: 15px;
-	}
-	.modal__inf--text {
-		font-size: 16px;
-		line-height: 19px;
-	}
-	.modal__inf--price {
-		font-size: 19px;
-		line-height: 21px;
+        max-width: 95%;
+        &__inf {
+            padding: 35px 10px 40px 20px;
+            &--title {
+                font-size: 19px;
+                line-height: 22px;
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 15px;
+            }
+            &--text {
+                font-size: 16px;
+		        line-height: 19px;
+                &__italic {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+            &--price {
+                font-size: 19px;
+                line-height: 21px;
+            }
+        }
     }
     .modal {
         a.close-modal {
