@@ -1395,12 +1395,17 @@ ul {
         line-height: 71px;
     }
     .modal {
-		max-width: 80%;
+		max-width: 75%;
 	}
 	.modal__inf--title {
 		font-size: 24px;
 		line-height: 27px;
 	}
+    .modal__inf--title__new::after,
+    .modal__inf--title__hit::after {
+        display: none;
+    }
+    
 	.modal__inf--text {
 		font-size: 18px;
 		line-height: 21px;
