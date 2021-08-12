@@ -64,6 +64,40 @@ ul {
   margin: 0 auto;
 }
 
+.new {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.new::before {
+  content: "";
+  background-image: url("../img/new.svg");
+  background-size: 100%;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  position: absolute;
+  flex: 0 0 auto;
+  left: -40px;
+}
+
+.hit {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hit::before {
+  content: "";
+  background-image: url("../img/hit.svg");
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  flex: 0 0 auto;
+  left: -35px;
+}
+
 .title {
   font-family: "Gilroy";
   font-style: normal;
@@ -949,6 +983,13 @@ ul {
   .intro__inner::after {
     left: -10%;
   }
+
+  .package__item--header {
+    padding: 33px 150px 31px 90px;
+  }
+  .package__item--body {
+    padding: 33px 70px 31px 90px;
+  }
 }
 @media (max-width: 1366px) {
   .container {
@@ -979,7 +1020,7 @@ ul {
     top: -50px;
   }
   .package__item--body {
-    padding: 30px 108px 30px 25px;
+    padding: 30px 70px 30px 50px;
   }
   .package__item--price {
     padding: 5px 0 60px 25px;
@@ -1430,6 +1471,18 @@ ul {
   }
   .text--intro {
     width: 50%;
+  }
+
+  .new::before {
+    width: 30px;
+    height: 30px;
+    left: -30px;
+  }
+
+  .hit::before {
+    width: 24px;
+    height: 24px;
+    left: -28px;
   }
 
   .header {
